@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>nalilz's Bio</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="theme-switch">
+    <i class="fas fa-moon"></i>
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider round"></span>
+    </label>
+    <i class="fas fa-sun"></i>
+  </div>
+
+  <div class="container">
+    <div class="bio-card">
+      <div class="profile-header">
+        <img src="attached_assets/cater.png" alt="avatar" class="avatar">
+        <div class="status-badge online">nalilz</div>
+      </div>
+      <h1>nalilz <span style="font-size: 0.8em">🐱</span></h1>
+      <p class="bio-text">Meow! Just a Cat Lover 🐱💕</p>
+      <div class="interests">
+        <span class="interest-tag">Cats</span>
+        <span class="interest-tag">Discord</span>
+      </div>
+      <div class="social-links">
+        <a href="https://discord.gg/D4ZQfKfmpm" class="discord-btn" target="_blank">
+          <i class="fab fa-discord"></i> Join my Discord server or I will clap ur cheeks
+        </a>
+      </div>
+    </div>
+
+    <div class="cat-game">
+      <div class="game-header">
+        <h2>Cat Catcher Game</h2>
+        <div class="game-stats">
+          <div class="stat">Score: <span id="score">0</span></div>
+          <div class="stat">High Score: <span id="highScore">0</span></div>
+          <div class="stat">Time: <span id="timer">30</span>s</div>
+        </div>
+      </div>
+
+      <div id="game-area">
+        <div id="cat">🐱</div>
+        <div id="obstacles"></div>
+      </div>
+
+      <div class="game-controls">
+        <button id="start-game" class="game-btn">Start Game</button>
+        <div class="difficulty">
+          <label>Difficulty:</label>
+          <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="achievements">
+        <h3>Achievements</h3>
+        <div class="achievement" id="achievement-beginner">
+          <i class="fas fa-medal"></i>
+          <span>Beginner</span>
+        </div>
+        <div class="achievement" id="achievement-pro">
+          <i class="fas fa-trophy"></i>
+          <span>Pro Catcher</span>
+        </div>
+        <div class="achievement" id="achievement-master">
+          <i class="fas fa-crown"></i>
+          <span>Cat Master</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="notification" class="notification"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
